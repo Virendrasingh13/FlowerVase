@@ -1,0 +1,436 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    z-index: 100;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color:#fff;
+    width: 100%;
+    height: 4em;
+    padding-top: 20px;
+    color:black;
+    font-weight: 300;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+
+}
+header .fla{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: oblique;
+    color:#6A1E55;
+    border: 2px solid transparent;
+    /* box-shadow: 0 0 10px #333; */
+    padding: 2px 20px;
+    cursor: pointer;
+}
+header .fla:hover{
+    /* transform: translate(100px); */
+    background-color:#A64D79
+}
+span{
+    color: #000B58;
+}
+header .navbar a{
+    font-size: 1.4rem;
+    padding: 15px;
+    transition:1s ease;
+    color:#6A1E55;
+
+}
+header .navbar a:hover{
+    transform:scale(100px);
+    color:brown;
+    
+}
+header .icons i{
+    font-size: 1.8rem;
+    padding: 5px;
+    margin-right: 5px;
+    border:2px solid transparent;
+    box-shadow: 0 0 25px #659287;
+    
+}
+
+header .icons i:hover{
+    /* transform: rotateX(180deg); */
+    color: brown;
+}
+
+/* media query */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+section{
+    padding: 2rem 9%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("./img/finL.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .home-content{
+    max-width: 50rem;
+}
+.home .home-content h3{
+    font-size: 5rem;
+    font-weight: 200;
+    color: #333;
+}
+.home .home-content span{
+    font-size: 3.5rem;
+    font-weight: 200;
+    color:palevioletred
+}
+.home .home-content p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    background:#333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(230, 22, 57);
+}
+.head{
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+   padding: 1rem;
+    /* margin: 2rem 0; */
+    background:white;
+    width: 100%;
+}
+.head span{
+    color: palevioletred;
+}
+.about .row{
+    display: flex;
+    justify-content:center;
+    gap:2rem;
+    /* flex-wrap: wrap; */
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-contain{
+    flex:1 1 40rem;
+    position:relative;
+
+}
+.about .row .video-contain video{
+    /* width:100%; */
+    border: 2px solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem #000;
+    height: 100%;
+    object-fit: cover;
+
+}
+.about .row .video-contain h3{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #333;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.about .row .contain {
+    margin-left:60px;
+
+}
+.about .row .contain h3{
+    font-size: 2.5rem;
+    color:#333;
+    cursor: pointer;
+
+
+}
+.about .row .contain h3:hover{
+    color: palevioletred;
+}
+.about .row .contain p{
+    color: grey;
+}
+.icon-contain{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 10px;
+}
+.icon-contain .icons{
+    background-color: #fff;
+    border:2px solid rgb(39, 32, 32);
+    padding: 1rem;
+    width: 22%;
+    height: 300px;
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+      flex: 1 1 25rem; */
+}
+.icon-contain .icons img{
+    height: 200px;
+    width: 200px;
+}
+.icon-contain .icons .info{
+    font-size: 1rem;
+    background: #eee
+}
+
+.Product-class .box-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    /* height: 300px;
+    width: 200px;
+     */
+}
+.Product-class .box-content .box{
+    /* flex: 1 1 30rem; */
+    box-shadow: 0 .5rem 1.5rem #333;
+    border-radius: .5rem;
+    border: .1rem solid #333;
+    position: relative;
+    height: 270px;
+    width: 250px;
+    margin-left: 15px;
+    
+}
+
+
+.box-content .box img{
+    height: 200px;
+    width: 200px;
+}
+.Product-class .box-content .box .discount{
+    position: absolute;
+    /* top:1rem;
+    left:1rem; */
+    font-size: 1.5rem;
+    color:palevioletred;
+    background-color: #333;
+    /* padding: 7rem 1rem; */
+}
+.Product-class .box-content .box .iamge{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 2rem;
+    background-position: center;
+}
+.Product-class .box-content .box .iamge img{
+    height: 25rm;
+}
+
+
+.Product-class .box-content .box .icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background-color:palevioletred;
+    color: #fff;
+}
+.Product-class .box-content .box .icon .fa-cart-shopping{
+    border-left: .1rem solid #333;
+    border-right: .1rem solid #333;
+    width: 100%;
+}
+
+.Product-class .box-content .box .icon :hover{
+    background-color: #000B58;
+}
+.review .cont-review{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap:1.5rem;
+    align-items: center;
+}
+.review .cont-review .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem #333;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    height: 30%;
+    width: 30%;
+}
+.review .cont-review .box .starts i{
+    font-size: 1.5rem;
+    color: palevioletred;
+}
+.review .cont-review .box p{
+
+    font-size: 1.2rem;
+    color:#333;
+    line-height: 1.5rem;
+    padding-top: 2rem;
+}
+.review .cont-review .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+.review .cont-review .box .user img{
+    height:10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.review .cont-review .box .user h3{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+.review .cont-review .box .user span{
+    font-size: 1.5rem;
+    color: palevioletred;
+    padding-left: 1rem;
+}
+.contact .row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap:1.5rem;
+    /* background-color: antiquewhite; */
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem #333;
+    border: .1rem solid black;
+    background-color: #fff;
+    border-radius: .5rem;
+   
+
+}
+.contact .row  .iamge{
+    flex: 1 1 40rem;
+    
+}
+.contact .row .image .starts{
+    font-size: 3rem;
+    color: palevioletred;
+    /* display: flex;
+    justify-content:space-around; */
+    padding-left: 230px;
+    gap:10rem;
+}
+.contact .row .iamge img{
+    width:50%;
+    border: .1rem solid #659287;
+    border-radius: .5rem;
+    
+}
+.contact .row form .box{
+    padding: .8rem;
+    font-size: 1.2rem;
+    color:#333 ;
+    text-transform: none;
+    border: .1rem solid #659287;
+    border-radius: .5rem;
+    margin: .7rem 0;
+    
+}
+.contact .row form .box:focus{
+        border-color: palevioletred;
+}
+.contact .row form textarea{
+    height: 6rem;
+    resize: none;
+}
+
+.fotter .box-bner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #333;
+    color: white;
+    padding-bottom:3rem;
+}
+.fotter .box-bner .box{
+    line-height:2rem;
+    float: 1 1 25rem;
+    padding-top: 10px;
+
+}
+.fotter .box-bner .box a{
+    display: block;
+    color: palevioletred;
+    font-size: 1.3rem;
+    
+}
+.fotter .box-bner .box .head2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.fotter .credit{
+    padding: 3rem 3rem;
+    font-size: 2rem;
+    background-color:#659287;
+    text-align: center;
+    color: #eee;
+}
+.fotter .credit .fa-solid{
+    color:palevioletred
+}
+span{
+    color: #6A1E55;
+}
+.fotter .credit .icon2 i{
+    margin-top: 10px;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+
+}
+.fotter .credit .icon2 i:hover{
+    transform: scale(1.7);
+    color: palevioletred;
+}
+.fotter .credit .h3 {
+    color: #000;
+}
+.fotter .credit .h3 .fa-solid{
+    color:#eee;
+    font-size: 3rem;
+}
+.fotter .credit .h3 .fa-solid:hover{
+    transform: scale(1.7);
+    color: palevioletred;
+}
